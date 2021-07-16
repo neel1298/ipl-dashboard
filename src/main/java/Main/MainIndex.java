@@ -6,9 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MainIndex {
 	
-	public static void main(String[] args) {
-		SpringApplication.run(MainIndex.class, args);    
-
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(MainIndex.class, args);   
 	}
 
 }
