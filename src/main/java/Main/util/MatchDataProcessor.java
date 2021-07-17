@@ -35,7 +35,7 @@ public class MatchDataProcessor implements ItemProcessor<RawMatchData, Match> {
 		
 		match.setTeam1(firstInningTeam);
 		match.setTeam2(secondInningTeam);
-		
+		match.setMatchWinner(data.getWinner());
 		match.setTossWinner(data.getToss_winner());
 		match.setTossDecision(data.getToss_decision());
 		
@@ -43,8 +43,6 @@ public class MatchDataProcessor implements ItemProcessor<RawMatchData, Match> {
 		match.setResultMargin(data.getResult_margin());
 		match.setUmpire1(data.getUmpire1());
 		match.setUmpire2(data.getUmpire2());
-	
-
 	   return match;
 	  }
 
